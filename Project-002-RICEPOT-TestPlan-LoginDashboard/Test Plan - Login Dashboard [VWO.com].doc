@@ -1,0 +1,92 @@
+Test Plan - Login Dashboard [VWO.com]
+
+1. Test Plan ID
+TP-VWO-LD-001
+
+2. Test Plan Name
+Test Plan - Login Dashboard [VWO.com]
+
+3. Version
+1.0
+
+4. Date
+2026-03-14
+
+5. Author
+Senior QA Lead Engineer
+
+6. Objective
+Validate the Login and Dashboard workflows of app.vwo.com to ensure successful authentication, secure session handling, correct module access, and stable dashboard data rendering for enterprise SaaS users.
+
+7. Scope of Testing
+- Functional coverage: Login page, post-login dashboard landing, navigation, role-based access, default widgets.
+- Non-functional: Performance, security, usability basics.
+- Integration: Identity provider/system API calls, backend data retrieval for dashboard cards/widgets.
+
+8. Test Strategy
+Risk-based testing with smoke tests, functional tests, API checks, UI validation, cross-browser checks. Manual exploratory plus scripted regression. Automation candidate: login/dashboard route validation.
+
+9. Test Criteria
+Entry Criteria:
+- PRD and design signed off
+- Staging environment deployed with auth backend and DB
+- Test accounts available
+- Test data loaded
+Exit Criteria:
+- All critical/high defects fixed and verified
+- ≥95% pass for login/dashboard
+- No open Severity 1/2 defects
+- Final approval
+
+10. Test Deliverables
+- Test plan document
+- Test case matrix
+- Test data sheet
+- Execution results
+- Defect reports
+- Final QA sign-off
+
+11. Test Schedule
+Week 1: PRD review and planning
+Week 2: Test case creation and environment setup
+Week 3: Functional test execution
+Week 4: Regression + non-functional tests
+Week 5: Final validation and reporting
+
+12. Resource Requirements
+QA Analysts (2), Automation Engineer (1), Dev support (1), staging environment, test management tool.
+
+13. Roles and Responsibilities
+QA Lead: overall QA governance
+QA Engineers: execute tests, log defects
+Automation Engineer: script regression
+Dev Team: fix defects
+Product Owner: approve criteria and sign-off
+
+14. Test Data Requirements
+Valid user credentials, invalid credentials, locked users, role-specific data, dashboard dataset, session timeouts.
+
+15. Environment Requirement
+Staging app URL, browser matrix (Chrome, Edge, Firefox), test accounts, network profiles, backend logs.
+
+16. Risk and Mitigation
+Risk: Auth instability -> mitigation: early sanity tests.
+Risk: Dashboard API latency -> mitigation: retry thresholds.
+Risk: Missing role data -> mitigation: seed pre-test data.
+
+17. Assumptions
+PRD has complete login/dashboard requirements. No hidden auth flows. Staging mirrors production.
+
+18. Test Metrics
+Coverage, pass rate, defect density, severity distribution, MTTR, regression cycle.
+
+19. Dependencies
+External IDP/SSO, backend data services, stable deployment.
+
+20. Defect Tracking
+Use Jira with [LoginDashboard], severity, steps, environment. Weekly triage.
+
+21. Approval
+QA Lead: _____
+Product Owner: _____
+Engineering Manager: _____
